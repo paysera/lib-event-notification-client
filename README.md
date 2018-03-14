@@ -1,5 +1,5 @@
 
-## vendor-event-notification-client
+## paysera-event-notification-client
 
 Provides methods to manipulate `EventNotification` API.
 It automatically authenticates all requests and maps required data structure for you.
