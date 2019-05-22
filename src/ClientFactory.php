@@ -7,7 +7,7 @@ use Paysera\Component\RestClientCommon\Util\ClientFactoryAbstract;
 
 class ClientFactory extends ClientFactoryAbstract
 {
-    const DEFAULT_BASE_URL = '/';
+    const DEFAULT_BASE_URL = 'https://checkout-eu-a.paysera.com/notification/rest/v1/';
 
     private $apiClient;
 
