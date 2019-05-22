@@ -15,6 +15,11 @@ class EventNotificationClient
         $this->apiClient = $apiClient;
     }
 
+    public function withOptions(array $options)
+    {
+        return new EventNotificationClient($this->apiClient->withOptions($options));
+    }
+
     /**
      * Mark(read) notification as processed
      * PUT /notifications/{notificationId}/read
@@ -71,5 +76,4 @@ class EventNotificationClient
 
         return new Entities\ResolvedNotificationsResult($data, 'items');
     }
-
 }
